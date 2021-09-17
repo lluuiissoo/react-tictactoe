@@ -1,3 +1,6 @@
+# Project description
+This is a very simple implementation of Tic-Tac-Toe game. It follows this [React tutorial](https://reactjs.org/tutorial/tutorial.html).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
