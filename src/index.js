@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import ToDo from './features/todo'
 
 // Component with only Render method can be written as regular function
 function Square(props) {
@@ -85,6 +86,9 @@ class Board extends React.Component {
             <div>{status}</div>
             <ol>{/* TODO */}</ol>
           </div>
+          <div className="game-info">
+            <ToDo />
+          </div>
         </div>
       );
     }
@@ -111,7 +115,7 @@ class Board extends React.Component {
   
   ReactDOM.render(
     <Game />,
-    document.getElementById('root')
+    document.getElementById('root') || document.createElement('div') // for testing purposes
   );
 
   function calculateWinner(squares){
@@ -173,4 +177,5 @@ class Board extends React.Component {
   //   return true;
   // }
   
+  export default Game;
  
